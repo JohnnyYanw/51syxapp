@@ -23,58 +23,26 @@
 </template>
 
 <script>
-	let infoList = [
-		{
-			url: 'static/img/1-xh.jpg',
-			info: '上海——杭州',
-			oldPrice: 107,
-			newPrice: 90,
-			detail: '导游+随机(城隍庙/东方明珠2球/黄浦江游船)票或外滩观光隧票',
-			id: 936620
-		}, {
-			url: 'static/img/1-tmh.jpg',
-			info: '上海——溧阳',
-			oldPrice: 155,
-			newPrice: 144,
-			detail: '导游+随机(城隍庙/东方明珠2球/黄浦江游船)票或外滩观光隧票',
-			id: 923499
-		}, {
-			url: 'static/img/1-cs.jpg',
-			info: '上海——常熟',
-			oldPrice: 130,
-			newPrice: 83,
-			detail: '导游+随机(城隍庙/东方明珠2球/黄浦江游船)票或外滩观光隧票',
-			id: 922377
-		}, {
-			url: 'static/img/1-zz.jpg',
-			info: '上海——周庄',
-			oldPrice: 90,
-			newPrice: 76,
-			detail: '导游+随机(城隍庙/东方明珠2球/黄浦江游船)票或外滩观光隧票',
-			id: 936626
-		}, {
-			url: 'static/img/1-hs.jpg',
-			info: '上海——黄山',
-			oldPrice: 150,
-			newPrice: 135,
-			detail: '导游+随机(城隍庙/东方明珠2球/黄浦江游船)票或外滩观光隧票',
-			id: 922015
-		}, {
-			url: 'static/img/1-sz.jpg',
-			info: '上海——盛泽',
-			oldPrice: 123,
-			newPrice: 100,
-			detail: '导游+随机(城隍庙/东方明珠2球/黄浦江游船)票或外滩观光隧票',
-			id: 921778
-		}
-	];
 
 	export default {
 		name: 'Linelist',
 		data() {
 			return {
-				infoList: infoList
+				infoList: []
 			}
+		},
+		methods: {
+			getData() {
+				this.$http.get('../../../../static/json/lineData.json')
+				.then(function(res) {
+					this.infoList = res.data;
+				}, function() {
+					console.log('请求错误！');
+				});
+			}
+		},
+		mounted() {
+			this.getData();
 		}
 	}
 </script>

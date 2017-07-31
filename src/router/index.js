@@ -1,8 +1,9 @@
 import Vue from 'vue';
-import Router from 'vue-router';
+import VueRouter from 'vue-router';
+import store from '../vuex';
 
-Vue.use(Router);
-let routes = [
+Vue.use(VueRouter);
+const routes = [
 	{
 		path: '/',
 		redirect: 'home'
@@ -103,10 +104,26 @@ let routes = [
 	}
 ];
 
-export default new Router({
+const router = new VueRouter({
 	base: __dirname,
-	linkActiveClass: 'on',
-	saveScrollPosition: false,
 	mode: 'history',
+	linkActiveClass: 'on',
+	scrollBehavior (to, from, savedPosition) {
+		if (savedPosition) {
+			return savedPosition
+		} else {
+			return {x: 0, y: 0}
+		}
+    },
 	routes
 });
+
+const commit = store.commit || store.dispatch;
+router.afterEach(route => {
+	setTimeout(function() {
+		commit('SET_DIRECTION', 'forward');
+		// console.log(store.state);
+	}, 50)
+})
+
+export default router;

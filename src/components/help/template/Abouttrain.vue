@@ -1,6 +1,6 @@
 <template>
 	<div class="train-page">
-		<div class="item-div page-title">汽车常见问题</div>
+		<div class="item-div page-title">火车常见问题</div>
 		<div class="item-div help-item" v-for="item of questionList">
 			<div class="help-title" @click="item.bool = !item.bool">{{item.question}}</div>
 			<transition name="slide-fade">

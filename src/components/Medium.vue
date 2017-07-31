@@ -1,6 +1,8 @@
 <template>
 	<div class="g-wrap">
-		<router-view></router-view>
+		<!-- <transition name="view-fade" mode="out-in"> -->
+			<router-view></router-view>
+		<!-- </transition> -->
 		<app-footer></app-footer>
 	</div>
 </template>
@@ -16,4 +18,11 @@
 	}
 </script>
 
-
+<style lang="less" scoped>
+	.view-fade-enter-active, .view-fade-leave-active {
+		transition: opacity .1s ease;
+	}
+	.view-fade-enter, .view-fade-leave-to {
+		opacity: 0;
+	}
+</style>

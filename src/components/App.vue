@@ -1,17 +1,16 @@
 <template>
 	<div class="g-body">
-		<transition name="fade" mode="out-in">
+		<!-- <transition name="view-fade" mode="out-in"> -->
 			<router-view></router-view>
-		</transition>
+		<!-- </transition> -->
 	</div>
 </template>
 
 <script>
-	import Medium from './Medium';
+	import { mapState } from 'vuex';
 
 	export default {
-		name: 'App',
-		components: Medium
+		name: 'App'
 	}
 </script>
 
@@ -37,5 +36,11 @@
 			top: 44px;
 			width: 100%;
 		}
+	}
+	.view-fade-enter-active, .view-fade-leave-active {
+		transition: opacity .1s ease;
+	}
+	.view-fade-enter, .view-fade-leave-to {
+		opacity: 0;
 	}
 </style>
