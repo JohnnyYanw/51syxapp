@@ -87,14 +87,19 @@
 			border-top: 1px solid #ddd;
 			font-size: 14px;
 			color: #333;
-			&.page-title, .help-title {
-				height: 38px;
+			&.page-title {
 				line-height: 38px;
 				font-size: 16px;
 				font-weight: bold;
 			}
-			.help-txt {
+			.help-title {
 				line-height: 20px;
+				padding: 5px 0;
+				font-size: 15px;
+				font-weight: 600;
+			}
+			.help-txt {
+				line-height: 16px;
 				padding-bottom: 5px;
 			}
 		}

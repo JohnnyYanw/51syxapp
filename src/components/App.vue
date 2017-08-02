@@ -21,6 +21,7 @@
 	body {
 		position: relative;
 		margin: 0 auto;
+		min-width: 320px;
 		max-width: 750px;
 		height: 100%;
 		font-size: 10px;

@@ -1,0 +1,51 @@
+[
+	{
+		"imgUrl": "static/img/scenery-mds.jpg",
+		"name": "妙道山",
+		"description": "峡谷幽深，溪流潺潺，蔚为壮观",
+		"location": "安徽省安庆市岳西县五河镇",
+		"themeType": "登山探险",
+		"payMode": "景区现付",
+		"price": 60
+	}, {
+		"imgUrl": "static/img/scenery-mds.jpg",
+		"name": "上海野生动物园",
+		"description": "狂野世界，动物天地，智慧旅游，自助取票",
+		"location": "上海市浦东新区南六公路178号",
+		"themeType": "主题乐园",
+		"payMode": "景区现付",
+		"price": 120
+	}, {
+		"imgUrl": "static/img/scenery-mds.jpg",
+		"name": "上海影视乐园",
+		"description": "峡谷幽深，溪流潺潺，蔚为壮观",
+		"location": "安徽省安庆市岳西县五河镇",
+		"themeType": "登山探险",
+		"payMode": "景区现付",
+		"price": 70
+	}, {
+		"imgUrl": "static/img/scenery-mds.jpg",
+		"name": "上海格里芬汽车影城闵行店",
+		"description": "汽车影院，指观众坐在汽车里观看的露天电影",
+		"location": "上海市闵行区曲吴路429号",
+		"themeType": "影视基地",
+		"payMode": "景区现付",
+		"price": 139
+	}, {
+		"imgUrl": "static/img/scenery-mds.jpg",
+		"name": "朱家角古镇",
+		"description": "小桥流水天然景，原汁原味明清街",
+		"location": "上海市青浦区朱家角镇美周路36号",
+		"themeType": "古镇山水",
+		"payMode": "景区现付",
+		"price": 25
+	}, {
+		"imgUrl": "static/img/scenery-mds.jpg",
+		"name": "上海大观园",
+		"description": "观光，旅游，休闲的综合性红楼梦主题公园",
+		"location": "上海市青浦区金商公路701号",
+		"themeType": "山水园林",
+		"payMode": "景区现付",
+		"price": 60
+	}
+]

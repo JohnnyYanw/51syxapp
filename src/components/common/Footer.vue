@@ -52,6 +52,7 @@
 		display: -webkit-flex;
 		display: -webkit-box;
 		display: flex;
+		min-width: 320px;
 		max-width: 750px;
 		width: 100%;
 		height: 52px;

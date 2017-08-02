@@ -1,11 +1,19 @@
 <template>
-	<div class="list-body">
-		景区直通车列表页
+	<div>
+		<app-header title="数据列表"></app-header>
+		<div class="s-content list-body">
+			景区直通车列表页
+		</div>
 	</div>
 </template>
 
 <script>
+	import Header from 'components/common/Header';
+
 	export default {
-		name: 'list'
+		name: 'list',
+		components: {
+			"app-header": Header
+		}
 	}
 </script>

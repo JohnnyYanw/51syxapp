@@ -17,6 +17,7 @@
 <style lang="less">
 	.header {
 		display: block;
+		min-width: 320px;
 		max-width: 750px;
 		width: 100%;
 		height: 44px;

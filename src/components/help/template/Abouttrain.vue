@@ -85,16 +85,21 @@
 			width: 94%;
 			padding: 0 3%;
 			border-top: 1px solid #ddd;
-			font-size: 14px;
+			font-size: 13px;
 			color: #333;
-			&.page-title, .help-title {
-				height: 38px;
+			&.page-title {
 				line-height: 38px;
 				font-size: 16px;
-				font-weight: bold;
+				font-weight: 600;
+			}
+			.help-title {
+				line-height: 20px;
+				padding: 5px 0;
+				font-size: 15px;
+				font-weight: 600;
 			}
 			.help-txt {
-				line-height: 20px;
+				line-height: 16px;
 				padding-bottom: 5px;
 			}
 		}
