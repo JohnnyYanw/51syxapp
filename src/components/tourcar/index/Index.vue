@@ -27,6 +27,15 @@
 				</form>
 			</div>
 			<input type="button" value="查询" class="search-btn">
+			<div>
+				<router-link to="tourcar/list">列表页</router-link>
+			</div>
+			<div>
+				<router-link to="tourcar/detail">详情页</router-link>
+			</div>
+			<div>
+				<router-link to="tourcar/order">订单页</router-link>
+			</div>
 		</div>
 	</div>
 </template>
