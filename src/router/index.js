@@ -1,6 +1,5 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import store from '../vuex';
 
 Vue.use(VueRouter);
 const routes = [
@@ -117,13 +116,5 @@ const router = new VueRouter({
     },
 	routes
 });
-
-const commit = store.commit || store.dispatch;
-router.afterEach(route => {
-	setTimeout(function() {
-		commit('SET_DIRECTION', 'forward');
-		// console.log(store.state);
-	}, 50)
-})
 
 export default router;
