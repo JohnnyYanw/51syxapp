@@ -29,17 +29,6 @@
 			'app-nav': Nav,
 			'app-tourcar': Tourcarline,
 			'app-line': Linelist
-		},
-		data() {
-			return {
-				
-			}
-		},
-		methods: {
-			
-		},
-		mounted: function() {
-			
 		}
 	}
 </script>

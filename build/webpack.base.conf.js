@@ -19,7 +19,7 @@ module.exports = {
 			: config.dev.assetsPublicPath
 	},
 	resolve: {
-		extensions: ['.js', '.vue', '.json', 'less', 'css'],
+		extensions: ['.js', '.vue', '.json', '.css'],
 		alias: {
 			'vue$': 'vue/dist/vue.esm.js',
 			'common.css': resolve('src/assets/css/common.css'),

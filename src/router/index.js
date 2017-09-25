@@ -95,9 +95,6 @@ const routes = [
 		path: '/hotel',
 		component: resolve => require(['components/hotel/Hotel'], resolve)
 	}, {
-		path: '/train',
-		component: resolve => require(['components/train/Train'], resolve)
-	}, {
 		path: '/hotelcar',
 		component: resolve => require(['components/hotelcar/Hotelcar'], resolve)
 	}

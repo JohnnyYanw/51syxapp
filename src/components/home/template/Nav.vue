@@ -3,12 +3,12 @@
 		<div class="nav-top nav-box">
 			<ul>
 				<li class="nav-item top-item">
-					<router-link :to="'/tourcar'">
+					<router-link to="/tourcar">
 						<img src="static/img/tourcar_img.gif">
 					</router-link>
 				</li>
 				<li class="nav-item top-item">
-					<router-link :to="'/bus'">
+					<router-link to="/bus">
 						<img src="static/img/bus_img.png">
 					</router-link>
 				</li>
@@ -17,23 +17,23 @@
 		<div class="nav-bottom nav-box">
 			<ul>
 				<li class="nav-item bottom-item">
-					<router-link :to="'/train'">
-						<img src="static/img/train_img.png">
+					<router-link to="/tourcar">
+						<img src="static/img/tourcar_img02.jpg">
 					</router-link>
 				</li>
 				<li class="nav-item bottom-item">
-					<router-link :to="'/hotel'">
+					<router-link to="/hotel">
 						<img src="static/img/hotel_img.png">
 					</router-link>
 				</li>
 				<li class="nav-item bottom-item">
-					<router-link :to="'/scenery'">
+					<router-link to="/scenery">
 						<img src="static/img/scenic_img.png">
 					</router-link>
 				</li>
 				<li class="nav-item bottom-item">
-					<router-link :to="'/hotelcar'">
-						<img src="static/img/hotelcar_img.png">
+					<router-link to="/hotelcar">
+						<img src="static/img/holiday_img.png">
 					</router-link>
 				</li>
 			</ul>
@@ -43,7 +43,7 @@
 
 <script>
 	export default {
-		name: 'Nav'
+		name: 'nav'
 	}
 </script>
 

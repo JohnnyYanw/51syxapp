@@ -2,7 +2,7 @@
 	<div class="lists-box">
 		<ul>
 			<li class="list-item" v-for="item of infoList">
-				<router-link :to="{path: 'tourcar/detail', query: {id: item.id}}">
+				<router-link class="list-link" :to="{path: 'tourcar/detail', query: {id: item.id}}">
 					<img :src="item.url">
 					<i>爆款线路</i>
 					<span class="line-info">{{item.info}}</span>
@@ -18,7 +18,6 @@
 </template>
 
 <script>
-
 	export default {
 		name: 'Linelist',
 		data() {
@@ -28,12 +27,12 @@
 		},
 		methods: {
 			getData() {
-				this.$http.get('../../../../static/json/lineData.json')
-				.then(function(res) {
-					this.infoList = res.data;
-				}, function() {
-					console.log('请求错误！');
-				});
+				this.$http.get('/static/json/lineData.json')
+					.then(function(res) {
+						this.infoList = res.data;
+					}, function() {
+						console.log('请求错误！');
+					});
 			}
 		},
 		mounted() {
@@ -52,7 +51,7 @@
 			display: block;
 			margin-bottom: 5px;
 			overflow: hidden;
-			a {
+			.list-link {
 				display: block;
 				width: 100%;
 				position: relative;
